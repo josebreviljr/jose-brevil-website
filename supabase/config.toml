@@ -1,1 +1,5 @@
+
 project_id = "rxkkiecaitspefrxjfpc"
+
+[functions.github-repos]
+verify_jwt = false

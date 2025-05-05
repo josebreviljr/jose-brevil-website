@@ -9,7 +9,72 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      api_credentials: {
+        Row: {
+          api_key: string | null
+          created_at: string
+          id: string
+          service: string
+          updated_at: string
+        }
+        Insert: {
+          api_key?: string | null
+          created_at?: string
+          id?: string
+          service: string
+          updated_at?: string
+        }
+        Update: {
+          api_key?: string | null
+          created_at?: string
+          id?: string
+          service?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      github_repositories: {
+        Row: {
+          cached_at: string
+          description: string | null
+          forks: number | null
+          github_id: number
+          homepage: string | null
+          html_url: string
+          id: string
+          language: string | null
+          last_updated: string | null
+          name: string
+          stars: number | null
+        }
+        Insert: {
+          cached_at?: string
+          description?: string | null
+          forks?: number | null
+          github_id: number
+          homepage?: string | null
+          html_url: string
+          id?: string
+          language?: string | null
+          last_updated?: string | null
+          name: string
+          stars?: number | null
+        }
+        Update: {
+          cached_at?: string
+          description?: string | null
+          forks?: number | null
+          github_id?: number
+          homepage?: string | null
+          html_url?: string
+          id?: string
+          language?: string | null
+          last_updated?: string | null
+          name?: string
+          stars?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
