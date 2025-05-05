@@ -58,7 +58,7 @@ const communityServices: CommunityService[] = [
       "Partnered with Mayor Keith Gaskin on civic initiatives and community outreach",
       "Represented student voices in city-wide policy discussions"
     ],
-    period: "2023 – Present"
+    period: "2023 – Present",
     location: "Columbus, MS (On-Site)"
   },
   {
