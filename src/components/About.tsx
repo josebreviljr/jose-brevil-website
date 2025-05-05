@@ -10,40 +10,32 @@ const About: React.FC = () => {
         <div className="reveal">
           <h3 className="text-xl font-semibold mb-4 text-navy">Background & Expertise</h3>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            I am a passionate researcher and educator with over a decade of experience in my field. My work focuses on bridging theoretical frameworks with practical applications to address real-world challenges.
+            Jose F. Brevil, Jr. is a Haitian-American scholar, civic leader, and aspiring public policy advocate committed to equity, service, and innovation.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            With a Ph.D. from [University Name], I've conducted extensive research in [research areas], contributing to numerous peer-reviewed publications and presentations at international conferences.
+            As a senior at the Mississippi School for Mathematics and Science and an incoming student at the University of Mississippi, Jose combines academic excellence with grassroots engagement and institutional leadership.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Currently, I serve as [Current Position] at [Current Institution], where I lead initiatives in [specific areas] and mentor the next generation of researchers and practitioners.
+            He is known for blending technology with public service, leading youth initiatives, and fostering bipartisan civic dialogue.
           </p>
         </div>
         
         <div className="reveal">
-          <h3 className="text-xl font-semibold mb-4 text-navy">Education & Professional Journey</h3>
+          <h3 className="text-xl font-semibold mb-4 text-navy">Education</h3>
           
           <div className="space-y-4">
             <div>
-              <h4 className="font-medium text-navy">Ph.D. in [Field]</h4>
-              <p className="text-gray-600">University Name, 20XX-20XX</p>
-              <p className="text-sm text-gray-700 mt-1">Dissertation: "[Title of Dissertation]"</p>
+              <h4 className="font-medium text-navy">University of Mississippi (Incoming, Fall 2025)</h4>
+              <p className="text-gray-600">B.A. in Public Policy Leadership, Trent Lott Leadership Institute</p>
+              <p className="text-sm text-gray-700 mt-1">Minor in Economics</p>
             </div>
             
             <Separator />
             
             <div>
-              <h4 className="font-medium text-navy">Master's in [Field]</h4>
-              <p className="text-gray-600">University Name, 20XX-20XX</p>
-              <p className="text-sm text-gray-700 mt-1">Thesis: "[Title of Thesis]"</p>
-            </div>
-            
-            <Separator />
-            
-            <div>
-              <h4 className="font-medium text-navy">Bachelor's in [Field]</h4>
-              <p className="text-gray-600">University Name, 20XX-20XX</p>
-              <p className="text-sm text-gray-700 mt-1">Graduated with Honors</p>
+              <h4 className="font-medium text-navy">Mississippi School for Mathematics and Science</h4>
+              <p className="text-gray-600">Diploma Expected May 2025</p>
+              <p className="text-sm text-gray-700 mt-1">Advanced coursework in mathematics, policy, and STEM, paired with leadership roles in student government, legal education, and civic service.</p>
             </div>
           </div>
         </div>
@@ -52,8 +44,8 @@ const About: React.FC = () => {
       <div className="mt-12 reveal">
         <h3 className="text-xl font-semibold mb-4 text-navy">Skills & Expertise</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {['Research Methodology', 'Data Analysis', 'Project Management', 'Academic Writing', 
-            'Public Speaking', 'Leadership', 'Curriculum Development', 'Grant Writing'].map((skill, index) => (
+          {['Policy Analysis', 'Public Speaking', 'Leadership', 'Civic Engagement', 
+            'Technology Integration', 'Youth Advocacy', 'Project Management', 'Research'].map((skill, index) => (
             <div key={index} className="bg-gray-50 p-4 rounded-md border border-gray-100 text-center">
               <span className="text-navy font-medium">{skill}</span>
             </div>
