@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               <img 
                 src="/lovable-uploads/75ac3d35-8304-42a0-b428-df51f6937966.png" 
                 alt="Jose F. Brevil, Jr." 
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-highlight-blue to-highlight-purple opacity-30"></div>
             </div>
