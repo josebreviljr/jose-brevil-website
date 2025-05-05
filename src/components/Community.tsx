@@ -59,6 +59,7 @@ const communityServices: CommunityService[] = [
       "Represented student voices in city-wide policy discussions"
     ],
     period: "2023 – Present"
+    location: "Columbus, MS (On-Site)"
   },
   {
     title: "Secretary-Treasurer, MSMS Young Democrats",
