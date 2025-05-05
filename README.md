@@ -1,73 +1,145 @@
-# Welcome to your Lovable project
 
-## Project info
+# Jose F. Brevil, Jr. - Personal Website
 
-**URL**: https://lovable.dev/projects/c31922d6-7307-4035-a31d-a1e6850a568b
+A modern, responsive personal website for Jose F. Brevil, Jr., built with React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Responsive design that works on all devices
+- Smooth scrolling navigation
+- Animated section reveals
+- Contact form connected to email
+- Modular component architecture for easy customization
+- SEO optimized
 
-**Use Lovable**
+## Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c31922d6-7307-4035-a31d-a1e6850a568b) and start prompting.
+The project follows a modular component structure:
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+src/
+├── components/      # Reusable UI components
+│   ├── Navbar.tsx   # Navigation bar
+│   ├── Hero.tsx     # Hero section
+│   ├── About.tsx    # About section
+│   ├── Research.tsx # Research section
+│   ├── Community.tsx # Community service section
+│   ├── Contact.tsx  # Contact form
+│   ├── Footer.tsx   # Footer
+│   └── Section.tsx  # Reusable section wrapper with animations
+├── pages/
+│   ├── Index.tsx    # Main page that assembles all components
+│   └── NotFound.tsx # 404 page
+├── utils/
+│   └── scroll.ts    # Utilities for scrolling and animations
+└── lib/
+    └── utils.ts     # General utility functions
+```
 
-**Use your preferred IDE**
+## Customization
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Content
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To customize the content of the website:
 
-Follow these steps:
+1. Edit the individual component files in `src/components/`
+2. Update the text, images, links, and other content to reflect Jose's personal information
+3. Modify the styling in the component files or in `src/index.css`
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Design
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To change the design and styling:
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Modify the color variables in `src/index.css`
+2. Update the Tailwind configuration in `tailwind.config.ts`
+3. Edit the component JSX and CSS classes
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Contact Form
+
+The contact form is set up to send emails to info@josebrevil.com. To implement the actual email sending functionality:
+
+1. Create a server endpoint that will handle the form submission
+2. Update the `handleSubmit` function in `src/components/Contact.tsx` to post to your endpoint
+3. Configure your endpoint to forward the message to info@josebrevil.com
+
+## Deployment
+
+### Building for Production
+
+To build the website for production:
+
+```bash
+npm run build
+```
+
+This will create a `dist` directory with the compiled assets.
+
+### Deployment Options
+
+#### Option 1: Netlify
+
+1. Connect your GitHub repository to Netlify
+2. Configure the build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. Deploy the site
+
+#### Option 2: Vercel
+
+1. Connect your GitHub repository to Vercel
+2. The default settings should work, but ensure:
+   - Framework Preset: Vite
+   - Build command: `npm run build`
+   - Output directory: `dist`
+3. Deploy the site
+
+#### Option 3: GitHub Pages
+
+1. Install the gh-pages package:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+2. Add these scripts to package.json:
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+   ```
+3. Run:
+   ```bash
+   npm run deploy
+   ```
+
+### Custom Domain
+
+To use a custom domain (like josebrevil.com):
+
+1. Purchase the domain from a domain registrar
+2. Configure your DNS settings as per your hosting provider's instructions
+3. Update the meta tags in `index.html` with the correct domain
+
+## Development
+
+### Prerequisites
+
+- Node.js (v14 or newer)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to the project directory
+cd jose-brevil-website
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## License
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c31922d6-7307-4035-a31d-a1e6850a568b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+All rights reserved, Jose F. Brevil, Jr.
