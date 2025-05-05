@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero: React.FC = () => {
   const scrollToContact = () => {
@@ -45,8 +46,12 @@ const Hero: React.FC = () => {
           </div>
           <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-highlight-blue to-highlight-purple opacity-80"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold font-[Raleway]">JB</div>
+              <img 
+                src="/lovable-uploads/75ac3d35-8304-42a0-b428-df51f6937966.png" 
+                alt="Jose F. Brevil, Jr." 
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-highlight-blue to-highlight-purple opacity-30"></div>
             </div>
           </div>
         </div>
