@@ -43,7 +43,7 @@ const GitHub: React.FC = () => {
         
         // Always fetch fresh data from the edge function
         const response = await supabase.functions.invoke('github-repos', {
-          body: { username: 'josebrevil' },
+          body: { username: 'josebreviljr' },
         });
         
         if (response.error) {
@@ -183,7 +183,7 @@ const GitHub: React.FC = () => {
           For more of my work and contributions, visit my GitHub profile:
         </p>
         <a 
-          href="https://github.com/josebrevil" 
+          href="https://github.com/josebreviljr" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center px-4 py-2 border border-navy rounded-md text-navy hover:bg-navy hover:text-white transition-colors"
