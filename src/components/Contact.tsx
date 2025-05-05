@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 interface FormData {
   name: string;
@@ -33,13 +34,17 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // In a real implementation, you would send this data to a server endpoint
-    // that would then forward it to info@josebrevil.com
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('Form submitted:', formData);
+      // Call the Supabase Edge Function to send emails
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      console.log('Form submitted successfully:', data);
       
       // Show success message
       toast({
