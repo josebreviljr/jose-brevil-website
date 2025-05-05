@@ -44,8 +44,8 @@ const About: React.FC = () => {
       <div className="mt-12 reveal">
         <h3 className="text-xl font-semibold mb-4 text-navy">Skills & Expertise</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {['Policy Analysis', 'Public Speaking', 'Leadership', 'Civic Engagement', 
-            'Technology Integration', 'Youth Advocacy', 'Project Management', 'Research'].map((skill, index) => (
+          {['Leadership', 'Program Development', 'Public Speaking', 'Civic Engagement', 
+            'Academic Research & Writing', 'Event & Project Management', 'Technology Integration in Education', 'Artificial Intelligence', 'Bilingual Communication'].map((skill, index) => (
             <div key={index} className="bg-gray-50 p-4 rounded-md border border-gray-100 text-center">
               <span className="text-navy font-medium">{skill}</span>
             </div>
