@@ -34,7 +34,13 @@ async function fetchGitHubRepos() {
     console.log('GitHub data saved successfully!');
   } catch (error) {
     console.error('Error fetching GitHub data:', error);
-    process.exit(1);
+    console.log('Creating empty GitHub data file as fallback...');
+    
+    // Create empty fallback data to prevent build failure
+    const fallbackData = [];
+    const outputPath = join(process.cwd(), 'src', 'data', 'github-repos.json');
+    writeFileSync(outputPath, JSON.stringify(fallbackData, null, 2));
+    console.log('Fallback GitHub data created successfully!');
   }
 }
 
