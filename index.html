@@ -1,42 +1,254 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jose F. Brevil, Jr. | Personal Website</title>
-    <meta name="description" content="Official website of Jose F. Brevil, Jr. - Researcher, Educator, and Community Leader. Explore research, publications, and connect for collaborations." />
-    <meta name="author" content="Jose F. Brevil, Jr." />
-    <meta name="keywords" content="Jose Brevil, Researcher, Educator, Academic, Community Leader" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose F. Brevil, Jr. | Researcher • Educator • Community Leader</title>
+    <meta name="description" content="Jose F. Brevil Jr. is a Haitian-American scholar, civic leader, and aspiring public policy advocate committed to equity, service, and innovation.">
+    <meta name="author" content="Jose F. Brevil, Jr.">
+    <meta name="keywords" content="Jose Brevil, Researcher, Educator, Community Leader, Public Policy, Mississippi, Haitian-American">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://josebrevil.com/" />
-    <meta property="og:title" content="Jose F. Brevil, Jr. | Personal Website" />
-    <meta property="og:description" content="Official website of Jose F. Brevil, Jr. - Researcher, Educator, and Community Leader." />
-    <meta property="og:image" content="https://josebrevil.com/og-image.jpg" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://josebrevil.com/">
+    <meta property="og:title" content="Jose F. Brevil, Jr. | Researcher • Educator • Community Leader">
+    <meta property="og:description" content="Jose F. Brevil Jr. is a Haitian-American scholar, civic leader, and aspiring public policy advocate committed to equity, service, and innovation.">
+    <meta property="og:image" content="https://josebrevil.com/og-image.jpg">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://josebrevil.com/" />
-    <meta name="twitter:title" content="Jose F. Brevil, Jr. | Personal Website" />
-    <meta name="twitter:description" content="Official website of Jose F. Brevil, Jr. - Researcher, Educator, and Community Leader." />
-    <meta name="twitter:image" content="https://josebrevil.com/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://josebrevil.com/">
+    <meta name="twitter:title" content="Jose F. Brevil, Jr. | Researcher • Educator • Community Leader">
+    <meta name="twitter:description" content="Jose F. Brevil Jr. is a Haitian-American scholar, civic leader, and aspiring public policy advocate committed to equity, service, and innovation.">
+    <meta name="twitter:image" content="https://josebrevil.com/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Font preconnect for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Jose F. Brevil, Jr.</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Jose F. Brevil, Jr.</h1>
+                    <h2 class="hero-subtitle">Researcher • Educator • Community Leader</h2>
+                    <p class="hero-description">
+                        Dedicated to advancing knowledge through innovative research and fostering positive change through community engagement. My work spans across multidisciplinary fields with a focus on creating meaningful impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="/resume.pdf" class="btn btn-outline" target="_blank">View Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <img src="lovable-uploads/75ac3d35-8304-42a0-b428-df51f6937966.png" alt="Jose F. Brevil, Jr." class="avatar-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow" onclick="scrollToSection('about')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Background & Expertise</h3>
+                    <p>Jose F. Brevil, Jr. is a Haitian-American scholar, civic leader, and aspiring public policy advocate committed to equity, service, and innovation.</p>
+                    <p>As a senior at the Mississippi School for Mathematics and Science and an incoming student at the University of Mississippi, Jose combines academic excellence with grassroots engagement and institutional leadership.</p>
+                    <p>He is known for blending technology with public service, leading youth initiatives, and fostering bipartisan civic dialogue.</p>
+                </div>
+                
+                <div class="about-card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>University of Mississippi (Incoming, Fall 2025)</h4>
+                        <p>B.A. in Public Policy Leadership, Trent Lott Leadership Institute</p>
+                        <span class="minor">Minor in Economics</span>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="education-item">
+                        <h4>Mississippi School for Mathematics and Science</h4>
+                        <p>Diploma Expected May 2025</p>
+                        <span class="description">Advanced coursework in mathematics, policy, and STEM, paired with leadership roles in student government, legal education, and civic service.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3>Skills & Expertise</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Leadership</div>
+                    <div class="skill-item">Program Development</div>
+                    <div class="skill-item">Public Speaking</div>
+                    <div class="skill-item">Civic Engagement</div>
+                    <div class="skill-item">Academic Research & Writing</div>
+                    <div class="skill-item">Event & Project Management</div>
+                    <div class="skill-item">Technology Integration</div>
+                    <div class="skill-item">Artificial Intelligence</div>
+                    <div class="skill-item">Bilingual Communication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section research">
+        <div class="container">
+            <h2 class="section-title">Research & Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Public Policy Research</h3>
+                    <p>Exploring innovative approaches to civic engagement and community development through evidence-based policy solutions.</p>
+                    <div class="project-tags">
+                        <span class="tag">Policy Analysis</span>
+                        <span class="tag">Community Development</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Educational Technology</h3>
+                    <p>Integrating artificial intelligence and modern technology into educational frameworks to enhance learning outcomes.</p>
+                    <div class="project-tags">
+                        <span class="tag">AI in Education</span>
+                        <span class="tag">Technology Integration</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Youth Leadership Development</h3>
+                    <p>Creating programs and initiatives that empower young leaders to drive positive change in their communities.</p>
+                    <div class="project-tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Youth Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section community">
+        <div class="container">
+            <h2 class="section-title">Community Engagement</h2>
+            <div class="community-content">
+                <div class="community-text">
+                    <h3>Making a Difference</h3>
+                    <p>Through grassroots engagement and institutional leadership, I work to create meaningful change in communities. My approach combines academic rigor with practical action, ensuring that research translates into real-world impact.</p>
+                    <ul class="impact-list">
+                        <li>Student Government Leadership</li>
+                        <li>Bipartisan Civic Dialogue</li>
+                        <li>Youth Initiative Development</li>
+                        <li>Community Service Programs</li>
+                    </ul>
+                </div>
+                <div class="community-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Years of Leadership</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Community Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Students Mentored</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p class="contact-intro">Have a question or want to work together? Feel free to reach out!</p>
+                
+                <div class="contact-main">
+                    <a href="mailto:info@josebrevil.com" class="contact-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Send me an email
+                    </a>
+                    
+                    <div class="social-links">
+                        <a href="https://facebook.com/josebrevil" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/josebrevil" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/josebrevil" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Jose F. Brevil, Jr. All rights reserved.</p>
+                <p>Researcher • Educator • Community Leader</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
